@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Display</title>
+</head>
+<body>
+    <h1>Received Data</h1>
+    {% if data.error %}
+        <p>{{ data.error }}</p>
+    {% else %}
+        <ul>
+            <li>Latitude: {{ data.latitude }}</li>
+            <li>Longitude: {{ data.longitude }}</li>
+            <li>Speed: {{ data.speed }}</li>
+            <li>Up Down Count: {{ data.up_down_count }}</li>
+            <li>Down Up Count: {{ data.down_up_count }}</li>
+        </ul>
+    {% endif %}
+</body>
+</html>
